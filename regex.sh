@@ -42,7 +42,7 @@ done
 
 read -p "Enter a valid password" pass
 
-input5="^(?=.{8,}$)(?=.*[A-Z])[a-zA-Z0-9]"
+input5="^(?=.{8,}$)(?=.*\d)(?=.*[A-Z])[a-zA-Z0-9]"
 while(( $pass =~ $input5 ))
 do
         read -p "Enter a valid email-Id" pass
