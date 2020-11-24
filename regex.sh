@@ -30,6 +30,16 @@ do
         echo "Invalid input"
 done
 
+read -p "Enter a valid phone-No" phone
+
+input4="^[0-9]{2}[ ]?[0-9]{10}$"
+while(( $phone =~ $input4 ))
+do
+        read -p "Enter a valid email-Id" phone
+        echo "Invalid input"
+done
+
+
 
 
 
