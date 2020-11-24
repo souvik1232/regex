@@ -18,3 +18,18 @@ do
         read -p "Enter a valid first name" lname
         echo "Invalid input"
 done
+
+
+
+read -p "Enter a valid email-Id" email
+
+input3="^[a-zA-Z0-9\-\+\.]*.([a-zA-Z0-9])?@([a-z0-9]*.[a-z]{2,}.([a-z]{2,})?)$"
+while(( $email =~ $input3 ))
+do
+        read -p "Enter a valid email-Id" email
+        echo "Invalid input"
+done
+
+
+
+
