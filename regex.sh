@@ -40,6 +40,13 @@ do
 done
 
 
+read -p "Enter a valid password" pass
 
+input5="^(?=.{8,}$)[a-zA-Z0-9]"
+while(( $pass =~ $input5 ))
+do
+        read -p "Enter a valid email-Id" pass
+        echo "Invalid input"
+done
 
 
