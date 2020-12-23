@@ -35,7 +35,7 @@ read -p "Enter a valid phone-No" phone
 input4="^[0-9]{2}[ ]?[0-9]{10}$"
 while(( $phone =~ $input4 ))
 do
-        read -p "Enter a valid email-Id" phone
+        read -p "Enter a valid phone number" phone
         echo "Invalid input"
 done
 
@@ -45,7 +45,7 @@ read -p "Enter a valid password" pass
 input5="^(?=.{8,}$)(?=.*\d)(?=.*[A-Z])[a-zA-Z0-9]*[\@\#\^]"
 while(( $pass =~ $input5 ))
 do
-        read -p "Enter a valid email-Id" pass
+        read -p "Enter a valid password" pass
         echo "Invalid input"
 done
 
